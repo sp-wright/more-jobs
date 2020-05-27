@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  cursor: default;
+  color: white;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  font-size: 0.75rem;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  width: 30%;
+  margin-left: auto;
+  border: solid 2px rgba(235, 235, 235, 0.425);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+/********************************************** HEADING **********************************************/
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+  padding: 2%;
+  color: lightseagreen;
+}
+
+.main-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+/********************************************** INPUT **********************************************/
+
+.input-container {
+  background-color: rgb(25, 141, 135);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.form-grp {
+  padding: 0.5rem;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.form-grp label {
+  font-size: 1rem;
+}
+
+.user-input {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  line-height: 2.5;
+  flex: 2;
+  padding-left: 0.75rem;
+  margin-left: 5rem;
+  border: solid 2px #fff;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.form-grp button {
+  width: 25%;
+  font-size: 1.25rem;
+  border-style: none;
+  border-radius: 5px;
+  border: solid 1px rgb(25, 141, 135);
+  /* filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.308)); */
+  cursor: pointer;
+  color: rgb(25, 141, 135);
+}
+.form-grp button:hover {
+  color: white;
+  border: solid 1px white;
+  background-color: rgb(25, 141, 135);
+}
+.form-grp button:focus {
+  outline: none;
+}
+
+.form-grp:nth-child(4) {
+  justify-content: center;
+}
+
+/********************* INPUT STATES *********************/
+
+.highlight {
+  border: solid 2px #fa163f;
+}
+
+/********************************************** OUTPUT **********************************************/
+
+.header-span {
+  background-color: lightseagreen;
+  margin-bottom: 0.75rem;
+}
+
+.output-header {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.output-header h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.output-header select {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+#output {
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+#output hr {
+  border-top: solid 1px #444;
+  grid-column: 1 / 8;
+}
+
+.output-info {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+  color: #444;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.output-info h3 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.output-info i {
+  color: #fa163f;
+  cursor: pointer;
+}
+.output-info i:hover {
+  color: #444;
+  cursor: pointer;
+}
+
+/********************* OUTPUT STATES *********************/
+
+.color-code {
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+}
+
+.normal {
+  background-color: #79d70f;
+}
+
+.important {
+  background-color: #fc8210;
+}
+
+.asap {
+  background-color: #fa163f;
+}
+
+.deleted {
+  transform: scale(0, 1);
+}
+
+.hidden-type {
+  display: none;
+}
+
+.hidden-importance {
+  display: none;
+}
+
+/********************************************** MEDIA **********************************************/
+
+@media (max-width: 800px) {
+  .form-grp {
+    width: 100%;
+  }
+
+  .form-grp select {
+    width: 35%;
+  }
+
+  .form-grp button {
+    width: 50%;
+    font-size: 1.25rem;
+  }
+
+  .output-header {
+    width: 95%;
+  }
+
+  .output-header h3 {
+    font-size: 1rem;
+  }
+
+  .output-header select {
+    width: 90%;
+  }
+
+  .output-info {
+    width: 95%;
+    margin: auto;
+  }
+  .output-info h3 {
+    font-size: 0.5rem;
+  }
+
+  .color-code {
+    width: 90%;
+  }
+}

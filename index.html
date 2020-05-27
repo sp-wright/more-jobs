@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Jobs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/92a286bacb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-4x fa-clipboard-list"></i>
+      <h1 class="main-title">More Jobs</h1>
+    </header>
+    <div class="app">
+      <div class="input-container">
+        <form id="input-form">
+          <div class="form-grp">
+            <label for="title">Task:</label>
+            <input class="user-input" placeholder="Enter in the task" type="text" id="task" />
+          </div>
+          <div class="form-grp">
+            <label for="type">Type:</label>
+            <select id="type" class="type-input">
+              <option value="none" selected disabled hidden>
+                Select an Option
+              </option>
+              <option value="living room">Living Room</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="misc.">Misc.</option>
+            </select>
+          </div>
+          <div class="form-grp">
+            <label for="importance">Priority:</label>
+            <select id="importance" class="importance-input">
+              <option value="none" selected disabled hidden>
+                Select an Option
+              </option>
+              <option value="normal">Normal</option>
+              <option value="important">Important</option>
+              <option value="asap">ASAP</option>
+            </select>
+          </div>
+          <div class="form-grp form-submit">
+            <button id="submit-input" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="header-span">
+        <div class="output-header">
+          <h3>Number</h3>
+          <h3>Task</h3>
+          <div>
+            <h3>Type</h3>
+            <select id="type-output" class="type-output">
+              <option value="all">All</option>
+              <option value="living room">Living Room</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="misc.">Misc.</option>
+            </select>
+          </div>
+          <div>
+            <h3>Priority</h3>
+            <select id="importance-output" lass="importance-output">
+              <option value="all">All</option>
+              <option value="normal">Normal</option>
+              <option value="important">Important</option>
+              <option value="asap">ASAP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <ul id="output"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
